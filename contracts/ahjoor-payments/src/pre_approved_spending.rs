@@ -244,8 +244,16 @@ pub trait PreApprovedSpendingInterface {
     /// Get all allowances for a customer
     fn get_customer_allowances(env: Env, customer: Address) -> Vec<SpendingAllowance>;
 
-    /// Get all allowances for a merchant
-    fn get_merchant_allowances(env: Env, merchant: Address) -> Vec<SpendingAllowance>;
+    /// Get a paginated page of allowances for a merchant
+    ///
+    /// Returns at most `limit` entries starting at `offset`. If `offset` is
+    /// past the end of the list, an empty vector is returned.
+    fn get_merchant_allowances(
+        env: Env,
+        merchant: Address,
+        offset: u32,
+        limit: u32,
+    ) -> Vec<SpendingAllowance>;
 
     /// Verify consent is valid
     fn verify_consent(env: Env, consent_id: u32) -> bool;

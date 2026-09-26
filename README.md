@@ -2,8 +2,8 @@
 
 ## Handsoff notes
 
-<!-- handsoff-issue-916 -->
-- #916: feat(rosca): Add pagination to get_member_receipt_ids
+<!-- handsoff-issue-875 -->
+- #875: feat(escrow): Add get_cancellation_penalty_bps view function
 
-<!-- handsoff-issue-918 -->
-- #918: feat(refund): Add pagination to get_delegates
+<!-- handsoff-issue-877 -->
+- #877: feat(escrow): Add get_insurance_config view function
