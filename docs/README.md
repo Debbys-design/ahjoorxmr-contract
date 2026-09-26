@@ -1,8 +1,9 @@
-# Ahjoor Contract Documentation
+# Documentation
 
-Welcome to the Ahjoor contract documentation directory. Below is a structured index of the feature guides, organized by the smart contract module each one covers.
+Welcome to the project documentation. This index links to the feature and
+reference docs for the repository.
 
----
+## Feature docs
 
 ## `ahjoor-payments`
 
